@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.container {
+  height: 100vh;
+  background-color: #e5eff5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.component {
+  height: 50rem;
+  width: 75rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.card {
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.community {
+  grid-column: span 2;
+  background-color: #fff;
+  padding: 3.6rem 9.6rem 3.6rem 3.6rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.heading-primary {
+  color: #2ab2af;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.community-heading {
+  color: #c0df34;
+  font-size: 1.8rem;
+  margin-top: 1.2rem;
+}
+
+.community-description {
+  color: #98a6bd;
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.subscription {
+  background-color: #2ab2af;
+  padding: 3.6rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.heading-secondary {
+  font-size: 1.8rem;
+}
+
+.pricing {
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  font-size: 3.2rem;
+}
+
+.price-time {
+  color: #e5eff5;
+  font-size: 1.4rem;
+  margin-left: 1.2rem;
+}
+
+.subscription-description {
+  font-size: 1.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.signup-button:link,
+.signup-button:visited {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  padding: 1.2rem 2.4rem;
+  text-decoration: none;
+  background-color: #c0df34;
+  border-radius: 5px;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-button:hover,
+.signup-button:active {
+  background-color: #acc53a;
+}
+
+.why {
+  background-color: #26c4c1;
+  padding: 3.6rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.why-list {
+  list-style: none;
+  text-decoration: none;
+  line-height: 1.2;
+}
+
+.why-list-item {
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 780px) {
+  .container {
+    height: auto;
+    padding: 6.4rem 4.8rem;
+  }
+
+  .component {
+    height: 75rem;
+    width: 40rem;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .community {
+    grid-column: span 1;
+    padding: 2.4rem 4.8rem 2.4rem 2.4rem;
+  }
+
+  .subscription {
+    padding: 2.4rem;
+  }
+
+  .why {
+    padding: 2.4rem;
+  }
+}

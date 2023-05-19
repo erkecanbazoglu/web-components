@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+  line-height: 1;
+}
+
+.container {
+  height: 100vh;
+  background-color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.component {
+  margin: 9.6rem 4.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.btn {
+  width: 3.2rem;
+  height: 3.2rem;
+  padding: 0.4rem;
+  margin: 0 0.8rem;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #087f5b;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #087f5b;
+}
+
+.icon {
+  stroke: #087f5b;
+}
+
+.btn:hover .icon {
+  stroke: #fff;
+}
+
+.dots {
+  color: #777;
+  font-size: 1.4rem;
+  letter-spacing: 2.4;
+}
+
+.page:link,
+.page:visited {
+  width: 3.2rem;
+  height: 3.2rem;
+  padding: 0.4rem;
+  color: #777;
+  background-color: transparent;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page:hover,
+.page:active {
+  color: #fff;
+  background-color: #087f5b;
+}
+
+.page--active:link,
+.page--active:visited {
+  color: #fff;
+  background-color: #087f5b;
+}

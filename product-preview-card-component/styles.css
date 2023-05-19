@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Fraunces", serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  background-color: #f2ebe3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.component {
+  height: 45rem;
+  width: 60rem;
+  background-color: #fff;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card {
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.details {
+  padding: 3.6rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.small-heading {
+  color: #6c7289;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.heading-primary {
+  color: #1c232b;
+  font-size: 3.2rem;
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+}
+
+.description {
+  color: #6c7289;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.pricing {
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  color: #3c8067;
+}
+
+.margin-left-sm {
+  margin-left: 1.8rem;
+}
+
+.crossed {
+  text-decoration: line-through;
+}
+
+.cart-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.cart-text {
+  margin-left: 0.8rem;
+}
+
+.cart-button:link,
+.cart-button:visited {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-radius: 11px;
+  background-color: #3c8067;
+  padding: 1.2rem 2.4rem;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-button:hover,
+.cart-button:active {
+  background-color: #31604f;
+}
+
+@media (max-width: 650px) {
+  .container {
+    height: auto;
+  }
+
+  .component {
+    height: 75rem;
+    width: 40rem;
+    margin: 5.6rem 2.4rem;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+  }
+}
+
+@media (max-width: 450px) {
+  .component {
+    width: 30rem;
+    height: 66rem;
+  }
+
+  .details {
+    padding: 2.4rem;
+  }
+}
